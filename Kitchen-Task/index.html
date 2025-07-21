@@ -1,1 +1,38 @@
-<!-- msg -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KitchenTask</title>
+  <link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Fatma's Kitchen</h1>
+    <p>Discover delicious meals from around the world</p>
+    <div class="category-selector">
+      <select class="category-dropdown" id="categorySelect">
+        <option value="">Select a meal category...</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="main-content" id="mainContent">
+    <div class="recipes-grid" id="recipesGrid">
+    </div>
+
+    <div class="recipe-detail" id="recipeDetail">
+      <div class="recipe-popup">
+        <button class="close-btn" onclick="closeRecipeDetail()">&times;</button>
+        <div class="recipe-detail-content" id="recipeDetailContent">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
